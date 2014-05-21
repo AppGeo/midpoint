@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "description": "find the midpoint of a line",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "tap-spec": "~0.2.0",
     "tape": "~2.13.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node test.js | tspec"
   },
