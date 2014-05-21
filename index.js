@@ -14,12 +14,7 @@ function midPoint (line) {
     }
   }
   
-  var hyp = (utils.getLength(line[start], line[end]) - diff) / 2;
-  var theta = utils.getAngle(line[start], line[end]);
-
-  return [
-    line[start][0] + hyp * Math.cos(theta),
-    line[start][1] + hyp * Math.sin(theta)
-  ];
+  var hyp = utils.getLength(line[start], line[end]);
+  return utils.diffThingy(line[start], line[end], hyp, diff);
 }
 module.exports = midPoint;

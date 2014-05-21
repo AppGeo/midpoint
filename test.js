@@ -18,10 +18,6 @@ test('lengths', function (t) {
   t.equals(utils.getLength(c, a), root2);
   t.equals(utils.getLength(c, b), root8);
 });
-test('angles', function (t) {
-  t.equals(utils.getAngle([0,0], [1,1]), Math.PI/4, 'right angle');
-  t.end();
-});
 test('mid points', function (t) {
   t.deepEquals(midPoint([[0,0], [1,1], [2,2], [3,3]]), [1.5, 1.5], 'correct mid point');
   t.deepEquals(midPoint([[0,0], [1,1], [3,3]]), [1.5, 1.5], 'correct mid point');
