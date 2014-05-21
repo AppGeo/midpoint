@@ -1,4 +1,4 @@
-MidPoint
+MidPoint [![Build Status](https://travis-ci.org/AppGeo/midpoint.svg)](https://travis-ci.org/AppGeo/midpoint)
 =====
 
 Find the midpoint of a line.
