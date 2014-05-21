@@ -1,0 +1,29 @@
+{
+  "name": "midpoint",
+  "version": "0.0.0",
+  "description": "find the midpoint of a line",
+  "main": "index.js",
+  "dependencies": {
+    "tap-spec": "~0.2.0",
+    "tape": "~2.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js | tspec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AppGeo/midpoint.git"
+  },
+  "keywords": [
+    "geo",
+    "midpoint",
+    "linestring"
+  ],
+  "author": "Calvin Metcalf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppGeo/midpoint/issues"
+  },
+  "homepage": "https://github.com/AppGeo/midpoint"
+}
