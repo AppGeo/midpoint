@@ -1,5 +1,5 @@
 
-import {getLength, diffThingy} from './utils.js'
+import {getLength, findMidpoint} from './utils.js'
 const midPoint = (line) => {
   let start = 0;
   let end = line.length - 1;
@@ -24,7 +24,7 @@ const midPoint = (line) => {
     // to correct this we 
     // 1. undo the last one that was too big
     // 2. force it to do the segment at the other end that was previously the midpoint
-    // 3. recalculate the didstance between the new last two points
+    // 3. recalculate the distance between the new last two points
     if (diff > 0) {
       diff -= lastStart; // 1. 
       start--;// 1. 
@@ -36,6 +36,6 @@ const midPoint = (line) => {
     }
      hyp = getLength(line[start], line[end]); // 3. 
   }
-  return diffThingy(line[start], line[end], hyp, diff);
+  return findMidpoint(line[start], line[end], hyp, diff);
 }
 export default midPoint;
