@@ -1,6 +1,6 @@
 
 import {getLength, diffThingy} from './utils.js'
-function midPoint (line) {
+const midPoint = (line) => {
   let start = 0;
   let end = line.length - 1;
   let diff = 0;

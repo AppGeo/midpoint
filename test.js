@@ -4,7 +4,7 @@ import test from 'tape';
 import {getLength} from './utils.js'
 import midPoint from './index.js'
 
-test('lengths', function (t) {
+test('lengths', (t) => {
   var a = [0, 0];
   var b = [1, 1];
   var c = [-1, -1];
@@ -28,7 +28,7 @@ test('mid points', function (t) {
   t.end();
 });
 
-test('weird', function (t){
+test('weird', (t) => {
   const path = [
           [
             -93.58900674667849,
@@ -48,6 +48,6 @@ test('weird', function (t){
           ]
         ]
   t.deepEquals(midPoint(path),   [-91.53717547300896, 35.08714598336179], 'correct forward')
-      t.deepEquals(midPoint(path.toReversed()),   [-91.53717547300896, 35.08714598336179 ], 'correct backwards')
-       t.end();
+  t.deepEquals(midPoint(path.toReversed()),   [-91.53717547300896, 35.08714598336179 ], 'correct backwards')
+  t.end();
 });
