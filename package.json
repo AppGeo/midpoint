@@ -1,9 +1,9 @@
 {
   "name": "midpoint",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "find the midpoint of a line",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "devDependencies": {
     "tap-spec": "~0.2.0",
     "tape": "~2.13.1"
