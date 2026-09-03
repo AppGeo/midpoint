@@ -1,6 +1,6 @@
 {
   "name": "midpoint",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "find the midpoint of a line",
   "main": "index.js",
   "type": "module",
